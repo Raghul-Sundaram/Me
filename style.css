@@ -27,21 +27,27 @@ html{
 nav {
   width: 100%;
   align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  border-bottom: 0.5px solid #00D1FF;
+  z-index: 2;
+
 }
 .r {
   font-family: 'Courgette';
 font-style: normal;
 font-weight: 300;
-font-size: 100px;
+font-size: 70px;
 color: #00D1FF;
 padding-left: 5px;
-padding-top: 5px;
+
 }
 .aghul {
   font-family: 'Courgette';
 font-style: normal;
 font-weight: 300;
-font-size: 50px;
+font-size: 30px;
 color: #00D1FF;
 padding-top: 5px;
 }
@@ -49,8 +55,8 @@ padding-top: 5px;
   display: inline-flex;
   list-style: none;
   position: absolute;
+  padding-top: 50px;
   left: 50%;
-  top: 50px;
 }
 .list-item {
   padding-left: 50px;
@@ -387,3 +393,25 @@ padding-right: 100px;
   .goto {
     display: none;
   }
+
+
+
+  /* width */
+#body::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+#body::-webkit-scrollbar-track {
+  background: #00D1FF;
+}
+
+/* Handle */
+#body::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+#body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
